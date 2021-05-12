@@ -48,7 +48,7 @@ if(Name==""||Phone==""||PickupLocation==""||DropLocation=="")
                               }
 		//setTimeout(function () { wnd.open();}, 2100);
 		
-			window.open('bc.html', '_blank');	
+			window.open('bookingSuccess.html', '_blank');	
         }
 
 });
