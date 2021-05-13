@@ -36,6 +36,7 @@ if(Name==""||Phone==""||PickupLocation==""||DropLocation=="")
         console.log('error');
         }else
         {
+            alert("sent");
             const request = new XMLHttpRequest();
         const url = 'https://api.telegram.org/bot'+BotId+'/sendMessage?chat_id='+ChatId+'&text='+result;
         request.open("post", url);
