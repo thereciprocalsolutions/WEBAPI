@@ -1,8 +1,4 @@
-/* 
-copy past in using file
-onclick="sent();"
-<script src="https://thereciprocalsolutions.github.io/WEPAPI/telegramsms.js"></script> 
-*/
+
 function sent() {
     var Name = document.getElementById("name").value;
     var Phone = document.getElementById("phone").value;
