@@ -12,8 +12,8 @@ function sent() {
     var CompanyName = document.getElementById("cname").value;
     var CompanyLink = document.getElementById("clink").value;
     var CompanyPhoneNumber = document.getElementById("cphone").value;
-    var BotId = document.getElementById("bid").value;
-    var ChatId = document.getElementById("cid").value;
+   // var BotId = document.getElementById("bid").value;
+   // var ChatId = document.getElementById("cid").value;
     var TelegramLink = document.getElementById("tlink").value;
     var rate;
     if((Cars=="Sedan") && (Service=="One-Way"))
@@ -54,7 +54,7 @@ if(Name==""||Phone==""||PickupLocation==""||DropLocation=="")
 				localStorage.setItem("result2", DropLocation);
 				localStorage.setItem("result3", Cars);
 				localStorage.setItem("result4", Service);
-				window.location.href = "bookingSuccess.html";
+				window.location.href = CompanyLink+"bookingSuccess.html";
 			}
 		})    			
         }
