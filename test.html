@@ -1,0 +1,127 @@
+
+
+<form class="contact-panel__form" method="post" action=""  id="bookingForm">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4 class="contact-panel__title">Taxi Booking Form</h4>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-name">Pick up location (required)</label>
+                    <input type="text" id="location-1" name="origin" class="form-control"  placeholder="Pickup Location" required> 
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-name">Drop location (required)</label>
+                    <input type="text" id="location-2" name="destination"  required class="form-control" placeholder="Drop Location">
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                
+                <center>  
+                        <button class="btn btn-success" type="button" onclick="calcRoute();">Check Price</button>
+                </center>
+
+           
+                <div id="ma" style="display: none;">  
+                <br><br>                              
+                                 
+                <b> <div id="output" class="result-table"></div></b>
+                <div class="container-map" id="google-map"></div> 
+<br><br>
+               <div class="col-md-6" required>
+                <div class="service-thumbnail d-flex flex-fill">
+                <img src="https://a1droptaxi.com/img/etios.png" alt="#" style="height: 130px; width: 130px; ">
+                <div id="output1" class="meta-item">
+            </div>
+        </div>
+    </div>
+                
+                 <div class="col-md-6">
+                <div class="service-thumbnail d-flex flex-fill">
+                <img src="https://a1droptaxi.com/img/crysta.png" alt="#" style="height: 130px; width: 130px; ">
+                <div id="output2" class="meta-item">
+            </div>
+        </div>
+    </div>
+
+                
+
+                <div class="col-md-6">
+                <div class="service-thumbnail d-flex flex-fill">
+                <img src="https://a1droptaxi.com/img/traveller.png" alt="#" style="height: 130px; width: 130px; ">
+                <div id="output3" class="meta-item">
+            </div>
+        </div>
+    </div>
+        </div> 
+                
+                
+                
+                
+     
+
+             
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-name">Name (required)</label>
+                   <input type="text" placeholder="Your Name" class="form-control" id="name" required>
+                  </div>
+                </div><!-- /.col-lg-6  -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-Phone">Phone Number(required)</label>
+                    <input type="tel" placeholder="Phone Number" class="form-control" placeholder="Your Number" id="phone"  title="Enter Valid Phone Number" required>
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-Phone">Car Type(required)</label>
+                      <select id="cars" name="cars" class="form-control">
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Traveller">Traveller</option>
+                      </select>
+                    </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="contact-Phone">Service Type (required)</label>
+                      <select id="service" name="ser" class="form-control">
+                        <option value="One-Way">One-Way</option>
+                        <option value="Round">Round</option>
+                        
+                      </select>
+                    </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-website">Pick up Date (required)</label>
+                    <input type="date" required placeholder="01/01/2020"  id="pickupdate" class="form-control"  >
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <label for="contact-email">Pick up Time (required)</label>
+                    <input type="time" required placeholder="9:00AM"  id="pickuptime" class="form-control"> 
+                  </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <button type="submit" class="btn btn__secondary btn__block " onclick="sent()">Submit Request</button>
+                  <div class="contact-result"></div>
+                </div><!-- /.col-lg-12 -->
+              </div><!-- /.row -->
+            </form>
+<div style="display: none;"> 
+<input type="text" value="trs" id="cname">
+<input type="text" value="trs.com" id="clink">
+<input type="text" value="9090901234" id="cphone">
+<input type="text" value="1673038851:AAEIqwAgS-TtA331gOhUHVhRnVJf_34bUsE" id="bid">
+<input type="text" value="-1001225437691" id="cid">
+<input type="text" value="https://api.telegram.org/bot1673038851:AAEIqwAgS-TtA331gOhUHVhRnVJf_34bUsE/sendMessage?chat_id=-1001225437691&text=" id="tlink">
+</div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNKpr4auBLgBgiOXJ41UUWTB58MZa6p3E&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://webapi.thereciprocalsolutions.com/map.js"></script>             
+ <script src="http://webapi.thereciprocalsolutions.com/telegram.js"></script> 
+ 
