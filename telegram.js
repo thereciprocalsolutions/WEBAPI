@@ -11,8 +11,8 @@ function sent() {
     var CompanyName = document.getElementById("cname").value;
     var CompanyLink = document.getElementById("clink").value;
     var CompanyPhoneNumber = document.getElementById("cphone").value;
-    var BotId = document.getElementById("bid").value;
-    var ChatId = document.getElementById("cid").value;
+   // var BotId = document.getElementById("bid").value;
+   // var ChatId = document.getElementById("cid").value;
     var TelegramLink = document.getElementById("tlink").value;
     var rate;
     if((Cars=="Sedan") && (Service=="One-Way"))
