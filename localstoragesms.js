@@ -1,8 +1,4 @@
-/* 
-copy past in using file
-onclick="sent();"
-<script src="http://webapi.thereciprocalsolutions.com/localstoragesms.js"></script> 
-*/
+
 
 function sent() {
     var Name = document.getElementById("name").value;
