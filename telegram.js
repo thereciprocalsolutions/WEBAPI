@@ -40,7 +40,7 @@ if(Name==""||Phone==""||PickupLocation==""||DropLocation=="")
         const url = TelegramLink+result;
         request.open("post", url);
         request.send();
-        var wnd1=location.replace("bookingSuccess.html","_self ");		      
+       // var wnd1=location.replace("bookingSuccess.html","_self ");		      
         }
 
 });
