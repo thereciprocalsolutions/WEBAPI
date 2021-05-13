@@ -1,7 +1,7 @@
 /* 
 copy past in using file
 onclick="sent();"
-<script src="https://thereciprocalsolutions.github.io/WEPAPI/localstoragesms.js"></script> 
+<script src="http://webapi.thereciprocalsolutions.com/localstoragesms.js"></script> 
 */
 
 function sent() {
