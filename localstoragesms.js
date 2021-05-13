@@ -39,7 +39,7 @@ if(Name==""||Phone==""||PickupLocation==""||DropLocation=="")
         }else
         {
         const request = new XMLHttpRequest();
-	      const url = 'https://api.telegram.org/bot'+BotId+'/sendMessage?chat_id='+ChatId+'&text='+result;
+	          const url = TelegramLink+result;
         request.open("post", url);
         request.send();
 		    console.log("Sent Telegram successfully");
