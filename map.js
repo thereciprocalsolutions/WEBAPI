@@ -1,10 +1,4 @@
-/* 
-copy past in using file
-onclick="calcRoute();"
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNKpr4auBLgBgiOXJ41UUWTB58MZa6p3E&libraries=places"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://thereciprocalsolutions.github.io/WEPAPI/map.js"></script> 
-*/
+
 var myLatLng = { lat: 13.0827, lng: 80.2707 };
 var mapOptions = {
     center: myLatLng,
