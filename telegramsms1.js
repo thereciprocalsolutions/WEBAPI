@@ -11,8 +11,8 @@ function sent() {
     var CompanyName = document.getElementById("cname").value;
     var CompanyLink = document.getElementById("clink").value;
     var CompanyPhoneNumber = document.getElementById("cphone").value;
-    var BotId = document.getElementById("bid").value;
-    var ChatId = document.getElementById("cid").value;
+   // var BotId = document.getElementById("bid").value;
+  //  var ChatId = document.getElementById("cid").value;
     var TelegramLink = document.getElementById("tlink").value;
     var rate;
     if((Cars=="Sedan") && (Service=="One-Way"))
@@ -37,7 +37,8 @@ if(Name==""||Phone==""||PickupLocation==""||DropLocation=="")
         }else
         {
             const request = new XMLHttpRequest();
-        const url = 'https://api.telegram.org/bot'+BotId+'/sendMessage?chat_id='+ChatId+'&text='+result;
+      //  const url = 'https://api.telegram.org/bot'+BotId+'/sendMessage?chat_id='+ChatId+'&text='+result;
+	const url = TelegramLink+result;
         request.open("post", url);
         request.send();
          console.log("Sent Telegram successfully");
@@ -47,7 +48,8 @@ if(Name==""||Phone==""||PickupLocation==""||DropLocation=="")
 			{
 				console.log("Sent Message successfully");
 		
-			window.location.href = "bookingSuccess.html";	
+			window.location.href = CompanyLink+"bookingSuccess.html";	
+				
       }
         }
 
